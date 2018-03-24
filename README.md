@@ -1,2 +1,7 @@
-# test-backend
-node backend for a simple take home test
+## To run this application:
+
+  npm run start
+
+### To debug this application:
+
+    npm run debug
