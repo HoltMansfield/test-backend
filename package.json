@@ -1,0 +1,26 @@
+{
+  "name": "test-backend",
+  "version": "1.0.0",
+  "description": "node backend for a simple take home test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoltMansfield/test-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoltMansfield/test-backend/issues"
+  },
+  "homepage": "https://github.com/HoltMansfield/test-backend#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "rekuire": "^0.1.9"
+  }
+}
