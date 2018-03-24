@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
+const ips = require('./ips')
 
 
 // the first method called during server startup
@@ -26,8 +27,12 @@ const preRoutesInitalization = app => {
 
 // the actual routes the app handles
 const createRoutes = app => {
-  app.post('/ips', (req, res) => {
+  app.get('/ips', (req, res) => {
+    const ipList = ips.getIps(req.ip)
 
+    return res.json({
+      ipList
+    })
   })
 
   app.get('/', (req, res) => {
